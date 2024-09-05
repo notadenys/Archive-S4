@@ -1,0 +1,50 @@
+Exo 1
+man ls
+man rm
+
+Exo 2
+chmod +x vide
+./vide
+chmod go-w ./
+chmod go-w *
+chmod u-r vide
+cat vide : 
+	cat: vide: Permission denied
+chmod a+rwx ./
+chmod a+rwx *
+
+Exo 3
+#!/bin/bash
+
+
+cd $@
+
+if [ -e *.pdf ]
+then mkdir -p sujet && mv *.pdf sujet
+fi
+
+if [ -e DATA* ]
+then mkdir -p data && mv DATA* data
+fi
+
+if [ -e *.jpg ]
+then mkdir -p ressource && mv *.jpg ressource
+fi
+
+if [ -e *.png ]
+then mkdir -p ressource && mv *.png ressource
+fi
+
+if [ -e *.zip ]
+then mkdir -p ressource && mv *.zip ressource
+fi
+
+if [ -e *.bash ]
+then mkdir -p bash && mv *.bash bash
+fi
+
+# if [ -e * ]
+# then mkdir -p divers && mv * divers
+# fi
+
+cd -

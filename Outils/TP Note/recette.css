@@ -1,0 +1,102 @@
+
+#recette h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2em;
+}
+
+#recette img {
+    float: right;
+    height: 10em;
+    padding-left: 2em;
+    padding-right: 20%;
+}
+
+#infoGenerales {
+    clear: both;
+    width: 30%;
+    font-style: italic;
+    font-size: 1.1em;
+    padding-right: 1em;
+}
+
+#infoGenerales h2 {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+#ingredients{
+    margin-top: 1em;
+    padding-right: 1em;
+    width: 30%;
+}
+
+#ingredients h2 {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.ingredient {
+    list-style-type: none;
+}
+
+#etapes {
+    position: absolute;
+    top: 10em;
+    left: 30%;
+    text-align: justify;
+    width: 60%;
+    border-left:1px solid black;
+    padding-left: 1em;
+    padding-righ: 1em;
+    padding-bottom: 2em;
+}
+
+#etapes h2 {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.etape {
+    list-style-type: decimal;
+}
+
+#nav {
+    position: absolute;
+    width: 30%;
+    top: 8em;
+}
+
+.liens li {
+    list-style-type: none;
+    background-color: LightPink;
+    margin-top: .75em;
+    margin-bottom:.75em;
+    width: 80%;
+}
+
+
+#contenu {
+    position: relative;
+    width: 70%;
+    left: 30%;
+    height: 50%;
+}
+
+
+#header {
+    font-size: 3em;
+    text-align: center;
+    background-color: LightBlue;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    font-size: .75em;
+    text-align: center;
+    border-top: 1px black solid;
+    background-color: LightBlue;
+    bottom: 0%;
+}

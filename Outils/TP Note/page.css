@@ -1,0 +1,39 @@
+
+#nav {
+    position: absolute;
+    width: 30%;
+    top: 8em;
+}
+
+.liens li {
+    list-style-type: none;
+    background-color: LightPink;
+    margin-top: .75em;
+    margin-bottom:.75em;
+    width: 80%;
+}
+
+
+#contenu {
+    position: relative;
+    width: 70%;
+    left: 30%;
+    height: 50%;
+}
+
+
+#header {
+    font-size: 3em;
+    text-align: center;
+    background-color: LightBlue;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    font-size: .75em;
+    text-align: center;
+    border-top: 1px black solid;
+    background-color: LightBlue;
+    bottom: 0%;
+}
