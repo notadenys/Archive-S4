@@ -1,0 +1,60 @@
+Première expérience
+
+Paquet 3:
+En cliquant sur Ethernet, trouver :
+
+    l’adresse source : ea:48:d3:74:1e:dd
+    l’adresse destination : 72:99:80:ee:d5:4f
+    le nom du protocole réseau encapsulé : 0x0800
+    les octets qui contiennent toutes ces infos :
+    	dst : 0-5  src : 6-11  type : 12-13
+    
+En cliquant sur la ligne suivante, trouver:
+
+    l’adresse source : 140.77.16.64
+    l’adresse destination : 140.77.16.15
+    le nom du protocole transport encapsulé : 17
+    les octets qui contiennent toutes ces infos :
+    	protocol : 23  src : 26-29  dst : 30-33
+    
+En cliquant sur la ligne suivante, trouver:
+
+    l’adresse source : 56461
+    l’adresse destination : 1800
+    les octets qui contiennent toutes ces infos : 
+    	srcp : 34-35  dstp : 36-37
+
+En cliquant sur la ligne suivante, trouver le message envoyé : Quelle heure est-il ?
+
+          0_________________6________________12_____14__62
+Ethernet: |ea:48:d3:74:1e:dd|72:99:80:ee:d5:4f|0x0800|...|
+		  src               dst         type   IP
+
+   23_24...26___________30__________33__62
+IP: |17|...|140.77.16.64|140.77.16.15|...|
+    proto        src         dst      UDP
+
+    34____36___38...42___________________62
+UDP: |56461|1800|...|Quelle heure est-il ?|
+      srcp  dstp              data
+      
+      
+l’adresse IP de pcS : 140.77.16.15
+l’adresse IP de pc1 : 140.77.16.64
+
+Trouver ce que le serveur a répondu au client : Il est l'heure du cours de Reseaux
+
+
+Deuxième expérience
+
+Regarder les 4 trames envoyées et en particulier les deux premières. Trouver comment le serveur peut différencier les trames et voir qu’il s’agit de deux clients différents. Trouver comment apparier les questions avec les réponses.
+
+Les clients differents ont les ports differents.
+
+
+Trouver quelle est la fonctionnalité de la couche transport qui est mis en évidence par cette expérience (chercher le mot “transport” dans le cours)
+
+Elle permet également le multiplexage, ce qui permet à deux processus sur la même
+machine de communiquer sur le même réseau
+
+
